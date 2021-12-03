@@ -60,16 +60,22 @@ const cardAppender = (selector) => {
   axios.get('http://localhost:5000/api/articles')
   .then(resp =>{
     const innerObj = resp.data['articles'];
-    for (const property in innerObj){
-      for (let index = 0; index < innerObj.length; index++) {
-        document.querySelector(selector).appendChild(Card(innerObj[property][index]));
-      }
+    //console.log(innerObj);
+    for (let array in innerObj){
+      // console.log(innerObj[array]);
+      const arrayObj = innerObj[array];
+      arrayObj.forEach(item => {
+        //console.log(item);
+        document.querySelector(selector).appendChild(Card(item));
+      }); 
     }
-    
   })
   .catch(error =>{
     console.error(error);
   })
 }
+
+const testArticles = axios.get('http://localhost:5000/api/articles');
+console.log(testArticles);
 
 export { Card, cardAppender }

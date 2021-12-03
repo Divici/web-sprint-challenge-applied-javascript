@@ -44,7 +44,7 @@ const tabsAppender = (selector) => {
   })
 }
 
-// const testTopics = axios.get('http://localhost:5000/api/topics');
-// console.log(testTopics);
+const testTopics = axios.get('http://localhost:5000/api/topics');
+console.log(testTopics);
 
 export { Tabs, tabsAppender }
