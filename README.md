@@ -60,7 +60,12 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 Demonstrate your understanding of this week's concepts by answering the following questions:
 
 1. What is the DOM?
+    A blueprint model object for how the web page is built and acts based on the HTML and CSS.
 2. What is an event?
+    Every interaction from a user on a web page.
 3. What is an event listener?
+    Tracks the process and subsequent action taken on an element, such as a click event on a link.
 4. Why would we convert a NodeList into an Array?
+    By converting to an array we gain access to all of its methods outside of forEach.
 5. What is a component?
+    Parts of HTML,CSS, and JavaScript brought together for reuse oon a page or application.
